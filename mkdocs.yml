@@ -1,0 +1,5 @@
+site_name: flake8-flask
+theme:
+  name: "material"
+markdown_extensions:
+  - codehilite
