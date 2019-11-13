@@ -1,5 +1,5 @@
 site_name: flake8-flask
 theme:
-  name: "readthedocs"
+  name: "mkdocs"
 markdown_extensions:
   - codehilite
