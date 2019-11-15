@@ -17,9 +17,8 @@ Validate the install using `--version`. flake8-flask adds two plugins, but this 
 
 ## List of warnings
 
-**R2C202**: `need-filename-or-mimetype-for-file-objects-in-send-file`: This check detects the use of a file-like object in `flask.send_file` without either `mimetype` or `attachment_filename` keyword arguments. `send_file` will throw a ValueError in this situation.
+- **R2C202**: `need-filename-or-mimetype-for-file-objects-in-send-file`: This check detects the use of a file-like object in `flask.send_file` without either `mimetype` or `attachment_filename` keyword arguments. `send_file` will throw a ValueError in this situation.
 
-**R2C203**: `secure-set-cookie`: This check detects calls to `response.set_cookie` that do not have `secure`, `httponly`, and `samesite` set. This follows the [guidance in the Flask documentation](https://flask.palletsprojects.com/en/1.1.x/security/#set-cookie-options).
+- **R2C203**: `secure-set-cookie`: This check detects calls to `response.set_cookie` that do not have `secure`, `httponly`, and `samesite` set. This follows the [guidance in the Flask documentation](https://flask.palletsprojects.com/en/1.1.x/security/#set-cookie-options).
 
-
-
+- `avoid-hardcoded-env-variables`: This check detect and discourages hardcoded usages of `ENV`, `DEBUG`, `TESTING`, and `SECRET_KEY` variables. This follows [Flask Configuration](https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#environment-and-debug-features) and [Flask Best Practices](https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#configuration-best-practices) guidelines.
