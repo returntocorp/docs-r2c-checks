@@ -31,7 +31,6 @@ app.config["ENV"] = "production"
 # For `DEBUG`
 app.config["DEBUG"] = True
 app.config["DEBUG"] = False
-app.run(debug=True)
 ```
 
 This check will _not_ alert on these cases:
@@ -52,7 +51,6 @@ app.config["ENV"] = os.environ["development"]
 # For `DEBUG`
 app.config["DEBUG"] = os.environ["DEBUG"] or True
 app.config["DEBUG"] = os.environ["DEBUG"] or False
-app.run(debug=os.getenv("DEBUG", True))
 ```
 
 ## References
