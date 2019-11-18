@@ -1,4 +1,4 @@
-# R2C203: secure-set-cookie
+# R2C203 secure-set-cookie
 
 **tl;dr**: This check follows [Internet cookie best practices](https://techblog.topdesk.com/security/cookie-security/) to help you keep your Flask application’s cookies safe by ensuring they are only sent over HTTPS, unreadable by scripts, and by not blindly sending cookies to anyone who asks. This check alerts when the `secure`, `httponly`, and `samesite` keyword arguments are not supplied to `response.set_cookie`.
 

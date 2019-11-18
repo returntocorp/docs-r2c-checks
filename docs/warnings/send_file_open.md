@@ -10,7 +10,7 @@ Now, sending a file-like object in `send_file` without specifying either `mimety
 
 This check alerts on the usage of a file-like object without satisfying the other conditions, preventing a runtime error.
 
-For example, the following snippet:
+For example, the following snippet,
 
 ``` python
 import flask
