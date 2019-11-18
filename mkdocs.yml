@@ -1,5 +1,10 @@
-site_name: flake8-flask
+site_name: r2c-checks
 theme:
-  name: "mkdocs"
+  name: "material"
+  favicon: "images/favicon.ico"
+  logo: "images/r2c-logo-silhouette.png"
+  palette:
+    primary: "black"
+    secondary: "indigo"
 markdown_extensions:
   - codehilite
