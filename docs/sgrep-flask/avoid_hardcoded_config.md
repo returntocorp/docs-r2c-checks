@@ -1,4 +1,3 @@
-
 # avoid-hardcoded-config
 
 From [builtin config variables](https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#builtin-configuration-values), this check discourages hardcoded usages of `ENV`, `DEBUG`, `TESTING`, and `SECRET_KEY` variables.

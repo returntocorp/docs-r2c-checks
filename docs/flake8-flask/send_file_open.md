@@ -1,4 +1,4 @@
-# R2C202 need-filename-or-mimetype-for-file-objects-in-send-file
+# r2c-need-filename-or-mimetype-for-file-objects-in-send-file
 
 **tl;dr**: This check will prevent the use of file-like objects, such as those returned by `open(filename, 'r')`, passed in to `flask.send_file` without the appropriate keyword args -- either `mimetype` or `attachment_filename`. This prevents a `ValueError` from being thrown under these conditions.
 

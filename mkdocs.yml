@@ -1,4 +1,4 @@
-site_name: r2c-checks
+site_name: bento-checks
 theme:
   name: "material"
   favicon: "images/favicon.ico"
