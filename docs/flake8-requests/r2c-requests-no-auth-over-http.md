@@ -1,7 +1,7 @@
 
 # r2c-requests-no-auth-over-http
 
-**tl;dr**: This check detects when `auth` param is possibly used over `http://`, which could expose credentials.
+**tl;dr**: This check detects when `auth` parameter is possibly used over `http://`, which could expose credentials.
 
 # Description
 
