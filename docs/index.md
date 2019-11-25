@@ -29,13 +29,13 @@ Contact us at support@r2c.dev. We want to hear from you!
 ## List of Checks
 
 --------
-[**r2c-need-filename-or-mimetype-for-file-objects-in-send-file**](flake8-flask/send_file_open/)
+[**r2c-flask-send-file-open**](flake8-flask/r2c-flask-send-file-open/)
 
 This check detects the use of a file-like object in `flask.send_file` without one of either the `mimetype` or `attachment_filename` keyword arguments. `send_file` will throw a ValueError in this situation.
 
 --------
 
-[**r2c-secure-set-cookie**](flake8-flask/secure_set_cookie/)
+[**r2c-flask-secure-set-cookie**](flake8-flask/r2c-flask-secure-set-cookie/)
 
 This check detects calls to `response.set_cookie` that do not have `secure`, `httponly`, and `samesite` set. This follows the guidance in the [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/security/#set-cookie-options).
 
@@ -47,6 +47,6 @@ This check discourages hardcoded usages of ENV, DEBUG, TESTING, and SECRET_KEY v
 
 --------
 
-[**r2c-unescaped-template-file-extension**](flake8-flask/unescaped_template_file_extension/)
+[**r2c-flask-unescaped-template-file-extension**](flake8-flask/r2c-flask-unescaped-template-file-extension/)
 
 This check detects the use of template file extensions that Flask does not escape by default. Flask only autoescapes templates with .html, .htm, .xml, and .xhtml extensions.

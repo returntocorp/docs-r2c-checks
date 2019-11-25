@@ -1,4 +1,4 @@
-# r2c-unescaped-template-file-extension
+# r2c-flask-unescaped-template-file-extension
 
 **tl;dr**  Flask will not autoescape Jinja templates that do not have .html, .htm, .xml, or .xhtml as extensions. This check will alert you if you do not have one of these extensions. This check will also do its best to detect if context variables are escaped if a non-escaped extension is used.
 

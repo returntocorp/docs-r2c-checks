@@ -1,4 +1,4 @@
-# r2c-secure-set-cookie
+# r2c-flask-secure-set-cookie
 
 **tl;dr**: This check follows [Internet cookie best practices](https://techblog.topdesk.com/security/cookie-security/) to help you keep your Flask application’s cookies safe by ensuring they are only sent over HTTPS, unreadable by scripts, and by not blindly sending cookies to anyone who asks. This check alerts when the `secure`, `httponly`, and `samesite` keyword arguments are not supplied to `response.set_cookie`.
 
@@ -29,7 +29,7 @@ def none_set():
 @app.route("/some_set")
 def some_set():
     r = make_response()
-    
+
     # some values are set but not others
     r.set_cookie("cookie1", "cookie_value", secure=True)
     r.set_cookie("cookie2", "cookie_value", httponly=True)
