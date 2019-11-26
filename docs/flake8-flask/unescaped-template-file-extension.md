@@ -6,9 +6,8 @@
 
 Flask does not autoescape Jinja templates that do not have the .html, .htm, .xml, or .xhtml file extensions. This behavior is described in the Flask documentation here: <https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup>.
 
-Flask will autoescape in this case:
-
 --------
+Flask will autoescape in this case:
 
 ``` python
 @app.route("/safe")
@@ -22,7 +21,6 @@ def safe():
 </div>
 
 --------
-
 But, Flask will not autoescape in this case:
 
 ``` python
