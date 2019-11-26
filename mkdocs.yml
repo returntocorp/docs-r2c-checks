@@ -1,4 +1,4 @@
-site_name: bento-checks
+site_name: Bento Checks
 theme:
   name: "material"
   favicon: "images/favicon.ico"
@@ -8,4 +8,8 @@ theme:
     secondary: "indigo"
 markdown_extensions:
   - codehilite
+site_url: https://checks.bento.dev
+site_description: "Documentation for r2c’s custom code checks. These checks are integrated into our free program analysis tool, Bento."
+site_author: "r2c — https://r2c.dev"
+copyright: "Copyright r2c"
 google_analytics: ["UA-106134149-11", "checks.bento.dev"]
