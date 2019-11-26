@@ -2,7 +2,7 @@ site_name: bento-checks
 theme:
   name: "material"
   favicon: "images/favicon.ico"
-  logo: "images/r2c-logo-silhouette.png"
+  logo: "images/bento-logo-24px-dark.png"
   palette:
     primary: "black"
     secondary: "indigo"
