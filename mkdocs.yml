@@ -8,3 +8,4 @@ theme:
     secondary: "indigo"
 markdown_extensions:
   - codehilite
+google_analytics: ["UA-106134149-11", "checks.bento.dev"]
