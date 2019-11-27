@@ -48,6 +48,10 @@ s3 = boto3.resource(
 )
 ```
 
+## Help
+
+If you have accidentally leaked your AWS tokens, follow the advice in this guide supplied by AWS Security: [What to Do If You Inadvertently Expose an AWS Access Key](https://aws.amazon.com/blogs/security/what-to-do-if-you-inadvertently-expose-an-aws-access-key/).
+
 ## References
 
 * https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html
@@ -55,4 +59,3 @@ s3 = boto3.resource(
 * https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html
 * https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration
 * https://medium.com/philosophically-secure/your-aws-keys-will-be-stolen-or-leaked-prepare-yourself-e807473f9665
-
