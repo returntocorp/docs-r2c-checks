@@ -9,7 +9,7 @@
 The check will detect these cases.
 
 ``` python
-# Normal import
+## Normal import
 import flask
 import json
 app = flask.Flask(__name__)
@@ -19,7 +19,8 @@ def user():
     user_dict = get_user(request.args.get("id"))
     return json.dumps(user_dict)
 
-# Method import
+
+## Method import
 import flask
 from json import dumps
 app = flask.Flask(__name__)
@@ -33,7 +34,7 @@ def user():
 The check considers these cases acceptable.
 
 ``` python
-# Import flask
+## flask.jsonify
 import flask
 app = flask.Flask(__name__)
 
@@ -42,7 +43,8 @@ def user():
     user_dict = get_user(request.args.get("id"))
     return flask.jsonify(user_dict)
 
-# import jsonify directly
+
+## Import jsonify directly
 from flask import Flask, jsonify
 app = Flask(__name__)
 
@@ -51,7 +53,8 @@ def user():
     user_dict = get_user(request.args.get("id"))
     return jsonify(user_dict)
 
-# not json.dumps
+
+## Not json.dumps
 import json
 from flask import Flask
 from bson import dumps
