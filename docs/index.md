@@ -12,42 +12,74 @@ $ pip3 install bento-cli
 
 To get started right away with sensible defaults:
 
-```
-$ bento init && bento check
+```console
+$ bento init
 ```
 
-To set aside preexisting results so you only see issues in new code:
+Bento will set aside preexisting results so you only see new findings as you code. To see new findings as you write, run:
 
+```console
+$ bento check 
 ```
+
+If you want to see results from all time, run:
+
+```console
+$ bento check --show all
+``` 
+
+If you want to stash findings for later, you can archive them by running:
+
+```console
 $ bento archive
 ```
 
-Bento is at its best when run automatically as a Git pre-commit hook (i.e. bento install-hook) or as part of CI.
+Bento is at its best when run automatically as a Git pre-commit hook or as part of CI. You can install Bento as a pre-commit hook:
 
-Contact us at support@r2c.dev. We want to hear from you!
+```console
+$ bento install-hook
+```
+
+Reach out to us at support@r2c.dev. We want to hear from you!
 
 ## List of Checks
 
----
+### __flake8-flask__
 
-[**r2c-need-filename-or-mimetype-for-file-objects-in-send-file**](flake8-flask/send_file_open/)
+[**r2c-flask-send-file-open**](flake8-flask/send-file-open/)
 
-This check detects the use of a file-like object in `flask.send_file` without one of either the `mimetype` or `attachment_filename` keyword arguments. `send_file` will throw a ValueError in this situation.
+This check will detect the use of `open(...)` passed in to `flask.send_file` without the appropriate keyword args -- either `mimetype` or `attachment_filename`. `open(...)` without these keywords throws a `ValueError` at runtime
 
----
-
-[**r2c-secure-set-cookie**](flake8-flask/secure_set_cookie/)
+[**r2c-flask-secure-set-cookie**](flake8-flask/secure-set-cookie/)
 
 This check detects calls to `response.set_cookie` that do not have `secure`, `httponly`, and `samesite` set. This follows the guidance in the [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/security/#set-cookie-options).
 
----
+[**r2c-flask-unescaped-file-extension**](flake8-flask/unescaped-file-extension/)
 
-[**avoid-hardcoded-config**](sgrep-flask/avoid_hardcoded_config/)
+Flask will not autoescape Jinja templates that do not use `.html`, `.htm`, `.xml`, or `.xhtml` as extensions. This check will alert you if you do not have one of these extensions.
+
+[**r2c-flask-use-jsonify**](flake8-flask/use-jsonify/)
+
+`flask.jsonify()` is a [Flask](https://palletsprojects.com/p/flask/) helper method which handles the correct settings for returning JSON from Flask routes. This check catches uses of `json.dumps()` returned from Flask routes and encourages `flask.jsonify()` instead.
+
+### __sgrep-flask__
+
+[**avoid-hardcoded-config**](sgrep-flask/avoid-hardcoded-config/)
 
 This check discourages hardcoded usages of ENV, DEBUG, TESTING, and SECRET_KEY variables in Flask.
 
----
+### __flake8-requests__
 
-[**r2c-unescaped-template-file-extension**](flake8-flask/unescaped_template_file_extension/)
+[**r2c-requests-no-auth-over-http**](flake8-requests/no-auth-over-http/)
 
-This check detects the use of template file extensions that Flask does not escape by default. Flask only autoescapes templates with .html, .htm, .xml, and .xhtml extensions.
+This check detects when the `auth` keyword argument is used over `http://`, which could expose credentials.
+
+[**r2c-requests-use-scheme**](flake8-requests/use-scheme/)
+
+This check finds URLs passed to  `requests` API methods don't have a URL scheme (e.g., https://), otherwise a `MissingSchema` exception will be thrown at runtime.
+
+### __flake8-boto3__
+
+[**r2c-boto3-hardcoded-access-token**](flake8-boto3/hardcoded-access-token/)
+
+This check looks for hardcoded AWS access tokens used in [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) API calls.

@@ -1,10 +1,10 @@
 # r2c-flask-unescaped-file-extension
 
-**tl;dr**  Flask will not autoescape Jinja templates that do not have .html, .htm, .xml, or .xhtml as extensions. This check will alert you if you do not have one of these extensions. This check will also do its best to detect if context variables are escaped if a non-escaped extension is used.
+**tl;dr**  Flask will not autoescape Jinja templates that do not have `.html`, `.htm`, `.xml`, or `.xhtml` as extensions. This check will alert you if you do not have one of these extensions. This check will also do its best to detect if context variables are escaped if a non-escaped extension is used.
 
 ## Description
 
-Flask does not autoescape Jinja templates that do not have the .html, .htm, .xml, or .xhtml file extensions. This behavior is described in the Flask documentation here: <https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup>.
+Flask does not autoescape Jinja templates that do not have the `.html`, `.htm`, `.xml`, or `.xhtml` file extensions. This behavior is described in the Flask documentation here: <https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup>.
 
 --------
 Flask will autoescape in this case:
