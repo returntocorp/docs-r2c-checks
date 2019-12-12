@@ -1,7 +1,6 @@
 # r2c-requests-use-scheme
 
-**tl;dr**: This check prevents URLs passed to  `requests` API methods don't have a URL scheme (e.g., https://), otherwise a `MissingSchema` exception will be thrown
-at runtime.
+**tl;dr**: This check finds URLs passed to  `requests` API methods don't have a URL scheme (e.g., https://), otherwise a `MissingSchema` exception will be thrown at runtime.
 
 
 # Description
