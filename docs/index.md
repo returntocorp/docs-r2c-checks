@@ -8,39 +8,7 @@ You can get these along with other great open source checks by installing Bento!
 $ pip3 install bento-cli
 ```
 
-## Usage
-
-To get started right away with sensible defaults:
-
-```console
-$ bento init
-```
-
-Bento will set aside preexisting results so you only see new findings as you code. To see new findings as you write, run:
-
-```console
-$ bento check 
-```
-
-If you want to see results from all time, run:
-
-```console
-$ bento check --show all
-``` 
-
-If you want to stash findings for later, you can archive them by running:
-
-```console
-$ bento archive
-```
-
-Bento is at its best when run automatically as a Git pre-commit hook or as part of CI. You can install Bento as a pre-commit hook:
-
-```console
-$ bento install-hook
-```
-
-Reach out to us at support@r2c.dev. We want to hear from you!
+See [Bento's README](https://bento.dev) for more details.
 
 ## List of Checks
 
