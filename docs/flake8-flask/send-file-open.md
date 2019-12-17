@@ -1,6 +1,6 @@
 # r2c-flask-send-file-open
 
-**tl;dr**: This check will detect the use of `open([filename], [mode])` passed in to `flask.send_file` without the appropriate keyword args -- either `mimetype` or `attachment_filename`. `open(...)` without these keywords throws a `ValueError` at runtime.
+**tl;dr**: This check locates calls to `flask.send_file()` which will throw a runtime error. `flask.send_file()` throws a `ValueError` when `open([filename], [mode])` is passed as the first argument without the either the `mimetype` or `attachment_filename` keyword arguments.
 
 ## Description
 
