@@ -16,7 +16,7 @@ See [Bento's README](https://bento.dev) for more details.
 
 [**r2c-flask-send-file-open**](flake8-flask/send-file-open/)
 
-This check will detect the use of `open(...)` passed in to `flask.send_file` without the appropriate keyword args -- either `mimetype` or `attachment_filename`. `open(...)` without these keywords throws a `ValueError` at runtime
+This check locates calls to `flask.send_file()` which will throw a runtime error. `flask.send_file()` throws a `ValueError` when `open([filename], [mode])` is passed as the first argument without the either the `mimetype` or `attachment_filename` keyword arguments.
 
 [**r2c-flask-secure-set-cookie**](flake8-flask/secure-set-cookie/)
 
