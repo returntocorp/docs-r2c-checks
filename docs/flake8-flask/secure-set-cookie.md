@@ -54,9 +54,9 @@ def index():
 
 ## References
 
-- https://techblog.topdesk.com/security/cookie-security/ - general cookie security guidelines
-- https://www.owasp.org/index.php/SecureFlag
-- https://www.owasp.org/index.php/HttpOnly
-- https://www.owasp.org/index.php/SameSite
-- https://github.com/GoogleCloudPlatform/flask-talisman - Google's Flask wrapper which enables `secure` and `httponly` for session cookies by default (but not for `set_cookie`)
-- https://stackoverflow.com/questions/45218195/set-secure-attribute-for-flask-cookies
+- [Cookie security guidelines](https://techblog.topdesk.com/security/cookie-security/)
+- [OWASP: Secure Flag](https://www.owasp.org/index.php/SecureFlag)
+- [OWASP: HttpOnly Flag](https://www.owasp.org/index.php/HttpOnly)
+- [OWASP: SameSite Attribute](https://www.owasp.org/index.php/SameSite)
+- [Stack Overflow on secure flag](https://stackoverflow.com/questions/45218195/set-secure-attribute-for-flask-cookies)
+- [Flask Talisman, Google's security wrapper](https://github.com/GoogleCloudPlatform/flask-talisman)
