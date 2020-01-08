@@ -42,4 +42,4 @@ launch(url="https://bing.com")
 
 ## References
 
-* https://click.palletsprojects.com/en/7.x/utils/#launching-applications
+* [Click documentation on launching external applications](https://click.palletsprojects.com/en/7.x/utils/#launching-applications)
