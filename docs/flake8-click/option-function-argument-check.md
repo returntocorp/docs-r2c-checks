@@ -33,4 +33,4 @@ def build(dummy): pass
 
 ## References
 
-* https://click.palletsprojects.com/en/7.x/options/
+* [More on Click options](https://click.palletsprojects.com/en/7.x/options/)
