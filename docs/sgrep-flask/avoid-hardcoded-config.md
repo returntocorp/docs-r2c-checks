@@ -53,5 +53,5 @@ app.config["DEBUG"] = os.environ["DEBUG"] or False
 ```
 
 ## References
-1. https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#builtin-configuration-values
-2. https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#environment-and-debug-features
+- [Flask documentation on builtin configuration variables](https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#builtin-configuration-values)
+- [Flask documentation on environment and debug features](https://flask.palletsprojects.com/en/1.1.x/config/?highlight=configuration#environment-and-debug-features)
