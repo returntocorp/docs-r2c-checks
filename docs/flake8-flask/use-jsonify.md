@@ -68,4 +68,4 @@ def user():
 
 ## References
 
-- https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify
+- [Stack Overflow: `json.dumps()` vs. `jsonify()`](https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify)
