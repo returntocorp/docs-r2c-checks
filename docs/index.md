@@ -30,6 +30,10 @@ Flask will not autoescape Jinja templates that do not use `.html`, `.htm`, `.xml
 
 `flask.jsonify()` is a [Flask](https://palletsprojects.com/p/flask/) helper method which handles the correct settings for returning JSON from Flask routes. This check catches uses of `json.dumps()` returned from Flask routes and encourages `flask.jsonify()` instead.
 
+[**r2c-flask-use-blueprint-for-modularity**](flake8-flask/use-blueprint-for-modularity)
+
+This check recommends using Blueprint when there are too many route handlers in a single file. Blueprint encourages modularity and [can greatly simplify how large applications work and provide a central means for Flask extensions to register operations on applications.](https://flask.palletsprojects.com/en/1.1.x/blueprints/#blueprints)
+
 ### __sgrep-flask__
 
 [**avoid-hardcoded-config**](sgrep-flask/avoid-hardcoded-config/)
