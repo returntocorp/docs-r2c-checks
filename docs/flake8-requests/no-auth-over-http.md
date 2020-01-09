@@ -25,10 +25,10 @@ This check will catch above pattern. However, it will not fire on
 
 ```python
 import requests
-r = requests.get('http://MYURL.com'')
+r = requests.get('http://MYURL.com')
 
 # No import
-r = requests.get('http://MYURL.com'', auth=('user', 'pass'))
+r = requests.get('http://MYURL.com', auth=('user', 'pass'))
 ```
 
 ```
