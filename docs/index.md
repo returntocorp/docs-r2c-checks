@@ -32,8 +32,7 @@ Flask will not autoescape Jinja templates that do not use `.html`, `.htm`, `.xml
 
 [**r2c-flask-use-blueprint-for-modularity**](flake8-flask/use-blueprint-for-modularity)
 
-
-This check recommends using Blueprint when there are too many route handlers in a single file. Using Blueprint encourages modularity and [can greatly simplify how large applications work and provide a central means for Flask extensions to register operations on applications.](https://flask.palletsprojects.com/en/1.1.x/blueprints/#blueprints)
+This check recommends using Blueprint when there are too many route handlers in a single file. Blueprint encourages modularity and [can greatly simplify how large applications work and provide a central means for Flask extensions to register operations on applications.](https://flask.palletsprojects.com/en/1.1.x/blueprints/#blueprints)
 
 ### __sgrep-flask__
 
