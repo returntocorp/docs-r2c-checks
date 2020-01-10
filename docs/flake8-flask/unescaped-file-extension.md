@@ -37,8 +37,8 @@ def unsafe():
 
 ## References
 
-* https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup
-* https://flask.palletsprojects.com/en/1.1.x/api/#template-rendering
-* https://docs.openstack.org/bandit/latest/plugins/b701_jinja2_autoescape_false.html - bandit check for not autoescaping jinja templates
-* https://stackoverflow.com/questions/14592554/disabling-autoescape-in-flask
-* https://nvisium.com/blog/2015/12/07/injecting-flask.html - article about SSTI and XSS in Flask
+* [Flask documentation on which extensions are autoescaped](https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup)
+* [Flask documentation for `render_template`](https://flask.palletsprojects.com/en/1.1.x/api/#template-rendering)
+* [Bandit check for disabled Jinja autoescaping](https://docs.openstack.org/bandit/latest/plugins/b701_jinja2_autoescape_false.html) 
+* [Stack Overflow: Disabling Autoescape in Flask](https://stackoverflow.com/questions/14592554/disabling-autoescape-in-flask)
+* [SSTI and XSS in Flask](https://nvisium.com/blog/2015/12/07/injecting-flask.html) 

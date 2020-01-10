@@ -54,8 +54,9 @@ If you have accidentally leaked your AWS tokens, follow the advice in this guide
 
 ## References
 
-* https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html
-* https://docs.aws.amazon.com/cli/latest/reference/sts/get-session-token.html
-* https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html
-* https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration
-* https://medium.com/philosophically-secure/your-aws-keys-will-be-stolen-or-leaked-prepare-yourself-e807473f9665
+* [What to do if you expose your AWS keys](https://aws.amazon.com/blogs/security/what-to-do-if-you-inadvertently-expose-an-aws-access-key/)
+* [AWS API Credentials](https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html)
+* [AWS Session Tokens](https://docs.aws.amazon.com/cli/latest/reference/sts/get-session-token.html)
+* [AWS Credentials Best Practices](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html)
+* [AWS Credentials for the AWS CLI](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration)
+* [Article about Preparing for Leaked Credentials](https://medium.com/philosophically-secure/your-aws-keys-will-be-stolen-or-leaked-prepare-yourself-e807473f9665)

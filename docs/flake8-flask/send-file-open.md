@@ -36,12 +36,12 @@ ValueError: Unable to infer MIME-type because no filename is available. Please s
 This check will catch this pattern.
 
 ```
-$> flake8 --select=R2C202 example.py
-example.py:5:10: R2C202 passing a file-like object to flask.send_file without a mimetype or attachment_filename will raise a ValueError
+$> flake8 --select=r2c-flask example.py
+example.py:5:10: r2c-flask-send-file-open passing a file-like object to flask.send_file without a mimetype or attachment_filename will raise a ValueError
 ```
 
 ## References
 
-- https://github.com/pallets/flask/issues/104
-- https://github.com/pallets/flask/pull/1988
-- https://github.com/pallets/flask/blob/ad567480708ceb860fab0455d3220b92ecd67601/docs/upgrading.rst
+- [Flask Github issue discussion: send_file in Flask 0.6](https://github.com/pallets/flask/issues/104)
+- [Flask PR: properly remove f.name usage in send_file](https://github.com/pallets/flask/pull/1988)
+- [Instructions on upgrading Flask](https://github.com/pallets/flask/blob/ad567480708ceb860fab0455d3220b92ecd67601/docs/upgrading.rst)

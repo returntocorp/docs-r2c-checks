@@ -5,7 +5,7 @@
 
 # Description
 
-For [`requests`](https://2.python-requests.org/en/master/), the API-s consider the following to be valid URL scheme per [urllib](https://docs.python.org/3/library/urllib.parse.html)
+For [`requests`](https://requests.readthedocs.io/en/master/), the API-s consider the following to be valid URL scheme per [urllib](https://docs.python.org/3/library/urllib.parse.html)
 ```json
 - file
 - ftp
@@ -58,3 +58,6 @@ requests.get("file:///Users/user/secrets.txt)
 $> flake8 --select=r2c example.py
 example.py:8:5: r2c-requests-use-scheme need a scheme (e.g., https://) for one of these possible urls ['notavalidscheme://www.github.com/user?name=foo&repo=bar'] otherwise requests will throw an exception.  See https://stackoverflow.com/questions/15115328/python-requests-no-connection-adapters
 ```
+
+## References
+- [Stack Overflow about this issue](https://stackoverflow.com/questions/15115328/python-requests-no-connection-adapters)

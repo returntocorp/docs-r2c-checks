@@ -5,9 +5,9 @@
 
 # Description
 
-For [`requests`](https://2.python-requests.org/en/master/), the API-s do not guarentee that we use HTTP over SSL
+For [`requests`](https://requests.readthedocs.io/en/master/), the API-s do not guarentee that we use HTTP over SSL
 even when we transport sensitive information like auth token. This introduces [CWE-522: Insufficiently Protected Credentials vulnerability](https://cwe.mitre.org/data/definitions/522.html).
-It is generally considered bad practice to use HTTP with authentication tokens. Use HTTPS as detailed in [rfc2818](https://tools.ietf.org/html/rfc2818).
+It is a security hazard to use HTTP with authentication tokens. Use HTTPS as detailed in [rfc2818](https://tools.ietf.org/html/rfc2818).
 
 
 This check will alert on these cases, for example:
@@ -37,6 +37,6 @@ example.py:5:1: r2c-requests-no-auth-over-http auth is possibly used over http:/
 ```
 
 ## References
-- https://2.python-requests.org/en/master/
-- https://cwe.mitre.org/data/definitions/522.html
-- https://tools.ietf.org/html/rfc2818
+- [requests documentation](https://requests.readthedocs.io/en/master/)
+- [CWE-522: Insufficiently Protected Credentials](https://cwe.mitre.org/data/definitions/522.html)
+- [RFC2818: HTTP Over TLS](https://tools.ietf.org/html/rfc2818)
