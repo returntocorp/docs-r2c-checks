@@ -34,6 +34,10 @@ Flask will not autoescape Jinja templates that do not use `.html`, `.htm`, `.xml
 
 This check recommends using Blueprint when there are too many route handlers in a single file. Blueprint encourages modularity and [can greatly simplify how large applications work and provide a central means for Flask extensions to register operations on applications.](https://flask.palletsprojects.com/en/1.1.x/blueprints/#blueprints)
 
+[**r2c-flask-missing-jwt-token**](flake8-flask/missing-jwt-token)
+
+JSON Web Tokens (JWT) tokens are used for authentication in web services. [Flask](https://palletsprojects.com/p/flask/) packages such as `flask_jwt`, `flask_jwt_extended`, and `flask_jwt_simple` provide a framework for assigning access tokens and verifying tokens for access to Flask routes. This check catches cases where the authentication decorators may be missing from certain routes and recommends their usage for API data security. 
+
 ### __sgrep-flask__
 
 [**avoid-hardcoded-config**](sgrep-flask/avoid-hardcoded-config/)
