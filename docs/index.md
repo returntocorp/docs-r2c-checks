@@ -59,3 +59,13 @@ This check finds URLs passed to  `requests` API methods don't have a URL scheme 
 [**r2c-boto3-hardcoded-access-token**](flake8-boto3/hardcoded-access-token/)
 
 This check looks for hardcoded AWS access tokens used in [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) API calls.
+
+### __flake8-click__
+
+[**r2c-click-launch-uses-literal**](flake8-click/launch-uses-literal)
+
+This check looks for non-literal URLs in `click.launch()`, which could direct a browser to a malicious site.
+
+[**r2c-click-option-function-argument-check**](flake8-click/option-function-argument-check)]
+
+This check makes sure that parameters match in `@click.option` and the function definition.
