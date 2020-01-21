@@ -17,6 +17,26 @@ You should also consider setting the [Content Security Policy (CSP)](https://fla
 
 For more information on the Content Security Policy, refer to the references.
 
+This check will detect the following case.
+
+```html
+<html>
+    <body>
+        <a href="{{ value }}">Test</a>
+    </body>
+</html>
+```
+
+The check will consider the following case acceptable.
+
+```html
+<html>
+    <body>
+        <a href="{{ url_for('foo') }}">Test</a>
+    </body>
+</html>
+```
+
 ## References
 
 * [Unsafe href use with Jinja template variables](https://flask.palletsprojects.com/en/1.1.x/security/#cross-site-scripting-xss)
