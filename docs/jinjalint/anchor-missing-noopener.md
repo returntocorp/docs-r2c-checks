@@ -1,10 +1,10 @@
 # jinjalint-anchor-missing-noopener
 
-**tl;dr** Pages opened with `target="_blank"` allow the new page to access the original's `window.opener`. This can have security, privacy, and performance implications. Include `rel="noopner noreferrer"` to prevent this.
+**tl;dr** Pages opened with `target="_blank"` allow the new page to access the original's `window.opener`. This can have security and performance implications. Include `rel="noopener noreferrer"` to prevent this.
 
 ## Description
 
-[This page](https://developers.google.com/web/tools/lighthouse/audits/noopener) by Google explains the danger of `target="_blank"`. The short version is that a page opened with `target="_blank"` can access the `window` object of the origin page. It can also manipulate the `window.opener` property, which could redirect the origin page to a malicious URL. This is called [**reverse tabnapping**](https://owasp.org/www-community/attacks/Reverse_Tabnabbing).
+[Google Lighthouse](https://developers.google.com/web/tools/lighthouse/audits/noopener) recommends including `noopener` and `noreferrer` when using `target="_blank"`. In short, a page opened with `target="_blank"` can access the `window` object of the origin page. It can also manipulate the `window.opener` property, which could redirect the origin page to a malicious URL. This is called [**reverse tabnapping**](https://owasp.org/www-community/attacks/Reverse_Tabnabbing).
 
 In general, when using `target="_blank"`, always include `rel="noopener noreferrer`.
 
