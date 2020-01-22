@@ -4,7 +4,7 @@
 
 ## Description
 
-[This page](https://developers.google.com/web/tools/lighthouse/audits/noopener) by Google explains the danger of `target="_blank"`. The short version is that a page opened with `target="_blank"` can access the `window` object of the origin page. It can also manipulate the `window.opener` property, which could redirect the origin page to a malicious URL. This is called [**reverse tabnapping**](https://owasp.org/www-community/attacks/Reverse_Tabnabbing).
+[Google Lighthouse](https://developers.google.com/web/tools/lighthouse/audits/noopener) recommends including `noopener` and `noreferrer` when using `target="_blank"`. In short, a page opened with `target="_blank"` can access the `window` object of the origin page. It can also manipulate the `window.opener` property, which could redirect the origin page to a malicious URL. This is called [**reverse tabnapping**](https://owasp.org/www-community/attacks/Reverse_Tabnabbing).
 
 In general, when using `target="_blank"`, always include `rel="noopener noreferrer`.
 
