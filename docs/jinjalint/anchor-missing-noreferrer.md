@@ -1,6 +1,6 @@
 # jinjalint-anchor-missing-noreferrer
 
-**tl;dr** Pages opened with `target="_blank"` allow the new page to access the original's `window.opener`. This can have security, privacy, and performance implications. Include `rel="noopner noreferrer"` to prevent this.
+**tl;dr** Pages opened with `target="_blank"` allow the new page to access the original's `window.opener`. This can have security, privacy, and performance implications. Include `rel="noopener noreferrer"` to prevent this.
 
 ## Description
 
