@@ -1,4 +1,4 @@
-# r2c-jinjalint-anchor-href-template-variable
+# jinjalint-anchor-href-template-variable
 
 **tl;dr** The `href` attribute in anchor tags accepts the `javascript:` URI and is therefore susceptible to cross-site scripting (XSS) if a Jinja template variable is used to insert the link. This check will alert when a template variable is used in the `href` attribute of an anchor tag.
 

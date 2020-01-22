@@ -1,4 +1,4 @@
-# r2c-jinjalint-form-missing-csrf-protection
+# jinjalint-form-missing-csrf-protection
 
 **tl;dr** Flask apps using Flask-WTF require including a CSRF token in the HTML template itself. This check detects missing CSRF protection in HTML forms in Jinja templates.
 
