@@ -4,7 +4,7 @@
 
 ## Description
 
-The [Flask-WTF documentation](https://flask-wtf.readthedocs.io/en/stable/csrf.html) states that forms must render the CSRF token in the template. It is highly recommended that all forms are protected with CSRF tokens.
+[Flask-WTF documentation](https://flask-wtf.readthedocs.io/en/stable/csrf.html) states that forms must render the CSRF token in the template. It is highly recommended that all forms are protected with CSRF tokens.
 
 ```html
 <form method="post">
