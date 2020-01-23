@@ -1,5 +1,11 @@
 # Bento Checks
 
+<div style="text-align: center">
+    <a href="https://bento.dev">
+        <img src="https://raw.githubusercontent.com/returntocorp/bento/master/bento-logo.png" alt="Find bugs delightfully fast without changing your workflow with Bento">
+    </a>
+</div>
+
 Documentation for [r2c](https://r2c.dev)'s custom checks. These checks are integrated into our program analysis tool, [Bento](https://bento.dev).
 
 You can get these along with other great open source checks by installing Bento!
