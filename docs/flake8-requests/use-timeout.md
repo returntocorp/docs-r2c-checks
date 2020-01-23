@@ -14,7 +14,7 @@ This check will detect the following case:
 ``` python
 import requests
 url = "https://github.com"
-r = requests.get('{url}')
+r = requests.get(url)
 ```
 
 This case is considered acceptable:
