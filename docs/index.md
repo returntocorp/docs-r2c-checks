@@ -54,6 +54,10 @@ This check detects when the `auth` keyword argument is used over `http://`, whic
 
 This check finds URLs passed to  `requests` API methods don't have a URL scheme (e.g., https://), otherwise a `MissingSchema` exception will be thrown at runtime.
 
+[**r2c-requests-use-timeout**](flake8-requests/use-timeout/)
+
+This check finds `requests` methods without a timeout. Without a timeout, `requests` will hang forever.
+
 ### __flake8-boto3__
 
 [**r2c-boto3-hardcoded-access-token**](flake8-boto3/hardcoded-access-token/)
