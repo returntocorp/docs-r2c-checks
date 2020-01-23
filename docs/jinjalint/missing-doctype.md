@@ -8,8 +8,8 @@ Quirks mode can also impact the security of the web page.
 ## Description
 
 Web pages missing a `DOCTYPE` declaration may be vulnerable to many different
-esoteric forms of [XSS attacks](https://owasp.org/www-community/attacks/xss/).
-For example, Javascript execution via the [`<title>` tag or via a VML frame](https://html5sec.org/).
+esoteric forms of [XSS attacks](https://owasp.org/www-community/attacks/xss/),
+such as Javascript execution via the [`<title>` tag or via a VML frame](https://html5sec.org/).
 
 This check will detect the following case.
 
